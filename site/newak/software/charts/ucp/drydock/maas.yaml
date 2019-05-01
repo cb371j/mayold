@@ -1,4 +1,4 @@
----
+#---
 ##############################################################################
 # Copyright (c) 2018 AT&T Intellectual Property. All rights reserved.        #
 #                                                                            #
@@ -15,34 +15,34 @@
 # limitations under the License.                                             #
 ##############################################################################
 # This file defines site-specific deviations for MaaS.
-schema: armada/Chart/v1
-metadata:
-  schema: metadata/Document/v1
-  name: ucp-maas
+#schema: armada/Chart/v1
+#metadata:
+#  schema: metadata/Document/v1
+#  name: ucp-maas
 #  replacement: true
-  layeringDefinition:
-    abstract: false
-    layer: site
-    parentSelector:
-      name: ucp-maas-global
-    actions:
-      - method: merge
-        path: .
-  storagePolicy: cleartext
+#  layeringDefinition:
+#    abstract: false
+#    layer: site
+#    parentSelector:
+#      name: ucp-maas-global
+#    actions:
+#      - method: merge
+#        path: .
+#  storagePolicy: cleartext
  #     - method: replace
  #       path: .values.conf.maas.proxy
-data:
-  values:
-    conf:
-      maas:
-        ntp:
-          disable_ntpd_region: true
-          disable_ntpd_rack: true
-        images:
-          default_os: 'ubuntu'
-          default_image: 'xenial'
-          default_kernel: 'hwe-16.04'
-        proxy:
-          proxy_enabled: 'false'
-          peer_proxy_enabled: false
-...
+#data:
+#  values:
+#    conf:
+#      maas:
+#        ntp:
+#          disable_ntpd_region: true
+#          disable_ntpd_rack: true
+#        images:
+#          default_os: 'ubuntu'
+#          default_image: 'xenial'
+#          default_kernel: 'hwe-16.04'
+#        proxy:
+#          proxy_enabled: 'false'
+#          peer_proxy_enabled: false
+#...
