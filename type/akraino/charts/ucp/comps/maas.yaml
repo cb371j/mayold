@@ -77,10 +77,16 @@ data:
       drydock:
         bootaction_url: http://DRYDOCK_IP:DRYDOCK_PORT/api/v1.0
       maas:
+        ntp:
+          disable_ntpd_region: true
+          disable_ntpd_rack: true
         images:
           default_os: 'ubuntu'
           default_image: 'xenial'
-          default_kernel: 'ga-16.04'
+          default_kernel: 'hwe-16.04'
+        proxy:
+          proxy_enabled: 'false'
+          peer_proxy_enabled: false
         credentials:
           secret:
             namespace: ucp
