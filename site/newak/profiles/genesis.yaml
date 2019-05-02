@@ -41,7 +41,7 @@ data:
       - ucp-control-plane=enabled
       - maas-rack=enabled
       - maas-region=enabled
-      - maas-control-plane=enabled
+     # - maas-control-plane=enabled
       - ceph-osd-bootstrap=enabled
       - openstack-control-plane=enabled
       - openvswitch=enabled
