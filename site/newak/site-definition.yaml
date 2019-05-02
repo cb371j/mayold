@@ -12,5 +12,5 @@ metadata:
 data:
   # The type layer this site will delpoy with. Type layer is found in the
   # type folder.
-  site_type: akraino
+  site_type: foundry
 ...
