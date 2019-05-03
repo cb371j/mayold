@@ -36,7 +36,7 @@ data:
           - 172.29.14.2
           - 172.29.14.3
     vip:
-        maas_vip: '172.30.14.115/24'
+        maas_vip: 172.30.14.115/24
 
   dns:
     # Kubernetes cluster domain. Do not change. This is internal to the cluster.
