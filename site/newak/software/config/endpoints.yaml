@@ -223,7 +223,7 @@ data:
           default: 80
           nodeport: 31900
           podport: 80
-          public: 8888
+          public: 80
         region_proxy:
           default: 8000
       host_fqdn_override:
