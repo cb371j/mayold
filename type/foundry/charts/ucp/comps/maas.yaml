@@ -13,12 +13,20 @@ metadata:
       - method: merge
         path: .
   storagePolicy: cleartext
-  substitutions:
+#  substitutions:
+#    - src:
+#        schema: pegleg/CommonAddresses/v1
+#        name: common-addresses
+#        path: .vip.maas_vip
+#      dest:
+#        path: .values.network.maas_ingress.addr
+   substitutions:
     - src:
         schema: pegleg/CommonAddresses/v1
         name: common-addresses
-        path: .vip.maas_vip
+        path: .calico.bgp.ipv4.maas_vip
       dest:
         path: .values.network.maas_ingress.addr
+
 data: {}
 ...
