@@ -15,7 +15,7 @@ metadata:
 data:
   vip:
     ingress_vip: '172.29.9.161/32'
-    maas_vip: '172.28.14.99/24'
+#    maas_vip: '172.28.14.99/24'
   calico:
     # NEWSITE-CHANGEME: The interface that calico will use. Update if your
     # logical bond interface name or calico VLAN have changed from the reference
