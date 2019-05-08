@@ -229,7 +229,7 @@ data:
       host_fqdn_override:
         default: null
         public:
-          host: maas.DOMAIN
+    #      host: maas.DOMAIN
     maas_ingress:
       hosts:
         default: maas-ingress
