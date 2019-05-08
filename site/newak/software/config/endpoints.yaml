@@ -22,10 +22,6 @@ metadata:
           pattern: DOMAIN
         - path: .ucp.shipyard.host_fqdn_override.public.host
           pattern: DOMAIN
-#        - path: .ucp.physicalprovisioner.host_fqdn_override.public.host
-#          pattern: DOMAIN
-#        - path: .ucp.maas_region.host_fqdn_override.public.host
-#          pattern: DOMAIN
         - path: .ceph.object_store.host_fqdn_override.public.host
           pattern: DOMAIN
         - path: .ceph.ceph_object_store.host_fqdn_override.public.host
@@ -204,45 +200,21 @@ data:
         default: "http"
       host_fqdn_override:
         default: null
-    maas_region:
-      name: maas-region
+    maas_region_ui:
+      name: maas-region-ui
       hosts:
-        default: maas-region
-        public: maas-region
+        default: maas-region-ui
+        public: maas
       path:
         default: /MAAS
       scheme:
         default: "http"
       port:
-        region_api:
+        region_ui:
           default: 80
-          nodeport: 31900
-          podport: 80
           public: 80
-        region_proxy:
-          default: 8000
       host_fqdn_override:
         default: null
-    maas_ingress:
-      hosts:
-        default: maas-ingress
-        error_pages: maas-ingress-error
-      host_fqdn_override:
-        public: null
-      port:
-        http:
-          default: 80
-        https:
-          default: 443
-        ingress_default_server:
-          default: 8383
-        error_pages:
-          default: 8080
-          podport: 8080
-        healthz:
-          podport: 10259
-        status:
-          podport: 18089
     kubernetesprovisioner:
       name: promenade
       hosts:
@@ -274,6 +246,33 @@ data:
         default: null
         public:
           host: shipyard.DOMAIN
+    airflow_web:
+      name: airflow-web
+      hosts:
+        default: airflow-web-int
+        public: airflow-web
+      port:
+        airflow_web:
+          default: 8080
+      path:
+        default: /
+      scheme:
+        default: "http"
+      host_fqdn_override:
+        default: null
+    airflow_flower:
+      name: airflow-flower
+      hosts:
+        default: airflow-flower
+      port:
+        airflow_flower:
+          default: 5555
+      path:
+        default: /
+      scheme:
+        default: "http"
+      host_fqdn_override:
+        default: null
     prometheus_openstack_exporter:
       namespace: ucp
       hosts:
