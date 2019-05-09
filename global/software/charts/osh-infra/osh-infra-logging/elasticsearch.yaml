@@ -135,7 +135,7 @@ data:
   values:
     pod:
       replicas:
-        client: 5
+        client: 2
       resources:
         enabled: true
         apache_proxy:

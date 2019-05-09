@@ -125,7 +125,7 @@ data:
       enabled: false
     pod:
       replicas:
-        rgw: 2
+        rgw: 1
     conf:
       rgw_ks:
         enabled: true

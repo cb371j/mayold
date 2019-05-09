@@ -261,9 +261,9 @@ data:
     pod:
       replicas:
         shipyard:
-          api: 2
+          api: 1
         airflow:
-          worker: 2
+          worker: 1
           # TODO: Scheduler can be set to 0 with a future version - here to
           # accommodate the upgrade to the current configuration with the
           # Scheduler being a sidecar with the Worker.

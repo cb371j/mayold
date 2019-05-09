@@ -54,8 +54,8 @@ data:
         node_selector_value: enabled
     pod:
       replicas:
-        ingress: 2
-        error_page: 2
+        ingress: 1
+        error_page: 1
     network:
       ingress:
         annotations:

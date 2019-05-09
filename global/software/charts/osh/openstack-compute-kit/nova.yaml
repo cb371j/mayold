@@ -332,10 +332,10 @@ data:
         node_selector_value: enabled
     pod:
       replicas:
-        api_metadata: 4
+        api_metadata: 2
         placement: 2
-        osapi: 4
-        conductor: 4
+        osapi: 2
+        conductor: 2
         consoleauth: 2
         scheduler: 2
         novncproxy: 2

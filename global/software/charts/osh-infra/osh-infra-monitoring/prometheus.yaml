@@ -109,7 +109,7 @@ data:
         node_selector_value: enabled
     pod:
       replicas:
-        prometheus: 3
+        prometheus: 2
       resources:
         enabled: true
         prometheus:

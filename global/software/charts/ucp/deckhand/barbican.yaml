@@ -233,7 +233,7 @@ data:
         node_selector_value: enabled
     pod:
       replicas:
-        api: 2
+        api: 1
   dependencies:
     - ucp-barbican-htk
 ...

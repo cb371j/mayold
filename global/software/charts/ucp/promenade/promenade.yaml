@@ -91,7 +91,7 @@ data:
   values:
     pod:
       replicas:
-        api: 2
+        api: 1
       env:
         promenade_api:
          # this aligns with drydocks timeouts and allows alow responses to

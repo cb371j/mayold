@@ -205,7 +205,7 @@ data:
           format: "%(message)s"
     pod:
       replicas:
-        api: 2
+        api: 1
     labels:
       api:
         node_selector_key: ucp-control-plane
